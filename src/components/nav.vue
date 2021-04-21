@@ -26,7 +26,7 @@ import { UserConfigInfoModel } from '../common/model/userConfigInfo.model'
 import { ElMessage } from 'element-plus'
 
 export default defineComponent({
-  name: "Nav",
+  name: 'Nav',
 
   setup() {
     const router = useRouter()
@@ -63,9 +63,9 @@ export default defineComponent({
             path: '/help'
           },
           {
-            name: '教程',
-            icon: '',
-            isActive: true,
+            name: '关于',
+            icon: 'el-icon-notebook-1',
+            isActive: false,
             path: '/about'
           }
         ],
@@ -88,7 +88,7 @@ export default defineComponent({
             }
           }
           router.push(path)
-        },
+        }
       }
     )
 
